@@ -1,6 +1,11 @@
 Cardano Serialization Lib
 =========================
 
+_This fork of the cardano-serialization-library includes a development shell
+that sets the `WASM_BINDGEN_WEAKREF` environment variable. This ensures that
+builds of the library will automatically `free()` pointers when their reference
+in the JavaScript runtime is garbage collected._
+
 This is a library for serialization & deserialization of data structures
 used in Cardano’s Haskell implementation of Alonzo along with useful
 utility functions.
