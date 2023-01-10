@@ -57,7 +57,8 @@
     mkNixpkgsFor = system: import nixpkgs {
       inherit system;
       overlays = [ 
-        binaryenOverlay 
+        # The overlay uses the same rev of binaryen as included in csl git submodule
+        # binaryenOverlay
       ];
     };
 
